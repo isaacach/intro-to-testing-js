@@ -11,3 +11,6 @@ const sayHello = str => {
     }
    return 'Hello, ' + str + '!';
 }
+
+const isFive = input => input === 5;
+

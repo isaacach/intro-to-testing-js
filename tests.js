@@ -51,6 +51,26 @@ describe('sayHello', function() {
     it('should return false when passed null as an input', function() {
         expect(sayHello(null)).toBe(false);
     });
+});
 
+describe('isFive', function() {
+    it('should be a defined function', function() {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return true when passed 5 as an input', function() {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return false when passed "5" as an input', function() {
+        expect(isFive("5")).toBe(false);
+    });
+    it('should return false when passed 23 as an input', function() {
+        expect(isFive(23)).toBe(false);
+    });
+    it('should return false when passed null as an input', function() {
+        expect(isFive(null)).toBe(false);
+    });
+    it('should return false when passed undefined as an input', function() {
+        expect(isFive(undefined)).toBe(false);
+    });
 
 });
