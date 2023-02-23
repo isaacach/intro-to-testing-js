@@ -33,4 +33,24 @@ describe('sayHello', function() {
     it("should never return 'undefined' when called", function() {
         expect(sayHello()).not.toBe(undefined);
     });
+    it('should return the string "Hello, World!" when executed', function() {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return the string "Hello, World!" when executed', function() {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
+    it('should return false when passed "" as an input', function() {
+        expect(sayHello("")).toBe(false);
+    });
+    it('should return false when passed "23" as an input', function() {
+        expect(sayHello("23")).toBe(false);
+    });
+    it('should return false when passed 23 as an input', function() {
+        expect(sayHello(23)).toBe(false);
+    });
+    it('should return false when passed null as an input', function() {
+        expect(sayHello(null)).toBe(false);
+    });
+
+
 });
